@@ -57,10 +57,34 @@ Une fois **node-red** installé, on va installer les nodes :
 Pour insataller un module, il faut proceder comme suite : 
 Cliquer sur le menu > cliquer sur Manage >  puis dans l'onglet **install** taper le nom du module >  Et installer le module.
 
-![Image du choix de Manage dans le Menu](https://github.com/alasco-one/indoor-air-quality-app/images/1.png)
+Maintenant, on va importer notre schéma **Node-red**. Voici ci-dessous un aperçu des nodes.
 
-![Image de recherche du module](https://github.com/alasco-one/indoor-air-quality-app/images/2.png)
+![Image du choix de Manage dans le Menu](/images/1.png)
 
+![Image de recherche du module](/images/2.png)
+
+On importe le fichier **flowns.json** depuis le dossier */flows* . 
+Dabord, on télécharge ce fichier. Ensuite on clique sur le **menu>import> puis on selectionne le fichier flowns.json** .
+
+Le serveur **node-red** est en place ! Maintenant il nous faut installer la base de donnée **influxDB**.
+
+Voici [un lien](https://docs.influxdata.com/influxdb/v1.8/introduction/install/) vers comment installer cette base de donnée selon votre OS. 
+
+Une fois la base de donnée créée, on va créer un utilisateur qui nous permettra depuis **node-red** d'accéder à la BDD.
+* **username** : alassane_samia
+* **password** : alassane_samia
+
+Dans un terminal de la machine serveur, on lance un client **influx**.
+Dans le client, on tape : 
+```CREATE USER alassane_samia WITH PASSWORD 'alassane_samia' WITH ALL PRIVILEGES
+```
+Mainteanant, on peut déploier notre solution **node-red** et après pour y accéder,  on tape dans le navigateur **<adresse du serveur node-red>:1800/ui**.
+ 
+##Tache 4:
+
+
+
+ 
 
 
 
