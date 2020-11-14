@@ -29,7 +29,11 @@ nodeRed.post('/', (req, res) => {
   io.emit("new", req.data)
 })
 nodeRed.listen(3000);
+//console.log("Server Node Red is running !!");
+
+
 console.log("Server Node Red is running !!");
+
 
 //-------------------------------------- Browser Part --------------------------
 
