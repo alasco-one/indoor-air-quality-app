@@ -15,6 +15,8 @@ const io = require('socket.io')(server, {origins:'localhost:* localhost:* localh
 //const io = IO.of('/ws', {transports: ['websocket']});
 
 
+//
+
 nodeRed.use(express.json())
 browser.use(express.json())
 
@@ -41,6 +43,7 @@ console.log("Server Node Red is running !!");
 io.on('connection', (socket) =>{
     console.log(`Connecté au client ${socket.id}`)
 })
+
 
 browser.get('/', (req, res) => {
     console.log(req.body) // <-- this will access the body of the post
