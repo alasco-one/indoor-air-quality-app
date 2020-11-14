@@ -76,11 +76,15 @@ Une fois la base de donnée créée, on va créer un utilisateur qui nous permet
 
 Dans un terminal de la machine serveur, on lance un client **influx**.
 Dans le client, on tape : 
-```CREATE USER alassane_samia WITH PASSWORD 'alassane_samia' WITH ALL PRIVILEGES
+```sql
+ CREATE USER alassane_samia WITH PASSWORD 'alassane_samia' WITH ALL PRIVILEGES
 ```
-Mainteanant, on peut déploier notre solution **node-red** et après pour y accéder,  on tape dans le navigateur **<adresse du serveur node-red>:1800/ui**.
- 
-##Tache 4:
+Mainteanant, on peut déploier notre solution **node-red** et après pour y accéder,  on tape dans le navigateur :
+```http://"adresse du serveur node-red":1800/ui
+```
+
+## Tache 4:
+Le bash !
 
 
 
